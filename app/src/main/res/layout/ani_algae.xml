@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context=".AniAlgaeFragment">
+
+    <LinearLayout
+        android:id="@+id/backdrop"
+        style="@style/Widget.Shrine.Backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="88dp">
+
+        <include layout="@layout/shr_backdrop" />
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/Widget.Shrine.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="12dp"
+            android:paddingRight="12dp"
+            app:contentInsetStart="0dp"
+            app:navigationIcon="@drawable/ic_menu_rabbit"
+            app:title="@string/shr_app_name" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/product_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/productGridBackgroundColor"
+        android:elevation="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="조류\n\n척추동물의 한 강(綱). 난생(卵生)임. 비상(飛翔) 생활에 적응한 진화를 볼 수 있으며 폐에는 서너 쌍의 기낭(氣囊)이 발달하고, 앞다리는 날개가 되며 뒷다리와의 분업이 현저함. 몸은 깃털로 덮였음. 정온 동물(定溫動物)로서 전 세계에 약 8,600종이 있으며 27목(目)으로 나누어짐. 매우 다양한 생활양식을 지님. 다리에 비늘이 있는 점 등 파충류와 공통되는 점이 많아 `진화된 파충류'라고도 일컬어짐. 가장 오래 된 것은 약 1억 5000만 년 전의 쥐라기(Jura 紀)의 화석 조류인 시조새로, 이것은 깃털을 지니는 점을 빼면 파충류와 구별하기가 곤란함. 새무리. 새강(綱). 순화어는 `날짐승'."
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

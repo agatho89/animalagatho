@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context=".AniMammaliaFragment">
+
+    <LinearLayout
+        android:id="@+id/backdrop"
+        style="@style/Widget.Shrine.Backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="88dp">
+
+        <include layout="@layout/shr_backdrop" />
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/Widget.Shrine.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="12dp"
+            android:paddingRight="12dp"
+            app:contentInsetStart="0dp"
+            app:navigationIcon="@drawable/ic_menu_rabbit"
+            app:title="@string/shr_app_name" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/product_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/productGridBackgroundColor"
+        android:elevation="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="포유류\n\n척추동물문 포유강에 속하는 동물의 총칭. 대뇌가 잘 발달하여 동물 중에서 가장 고등함. 목등뼈는 보통 7개이고 피부는 털로 덮여 있고 땀샘·피지샘·젖샘이 있음. 청각기는 내이·중이·외이로, 이는 앞니·송곳니·전구치(前臼齒)·후구치(後臼齒)로 분화함. 심장은 완전한 2심방 2심실임. 항온동물로 단공류(單孔類)만 난생(卵生)이고 그 외는 모두 태생(胎生)임. 형태·습성은 다양하고 사막·삼림·극지·고산 등의 지상·지하·지중·수중·공중 등 온갖 환경에 적응하고, 진화하여 분화를 이루어 척추동물 중 가장 번영하고 있음. 현생종은 단공류를 포함하는 원수아강(原獸亞綱)과 유대류(有袋類)·진수류(眞獸類)를 포함하는 수아강(獸亞綱)으로 크게 구분되고 약 4,500종이 있음. 젖먹이동물. 짐승강. 순화어는 `젖먹이짐승'."
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

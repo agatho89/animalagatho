@@ -1,0 +1,21 @@
+<resources>
+    <string name="shr_app_name">ANIMAL</string>
+    <string name="shr_app_subName">DICTIONARY</string>
+    <string name="shr_hint_username">Username</string>
+    <string name="shr_hint_password">Password</string>
+    <string name="shr_button_login">Login</string>
+    <string name="shr_button_cancel">Cancel</string>
+    <string name="shr_error_name">name must contain at least 2 characters.</string>
+    <string name="shr_error_password">password must contain at least 6 characters.</string>
+    <string name="shr_filter_title">Filter</string>
+    <string name="shr_search_title">Search</string>
+    <string name="shr_product_title">Title</string>
+    <string name="shr_product_description">Secondary text</string>
+    <string name="shr_product_detail_page">Detail text</string>
+
+    <!-- Shrine backdrop menu labels -->
+    <string name="shr_reptilia_label">파충류란?</string>
+    <string name="shr_algae_label">조류란?</string>
+    <string name="shr_mammalia_label">포유류란?</string>
+    <string name="shr_all_label">전체보기</string>
+</resources>
